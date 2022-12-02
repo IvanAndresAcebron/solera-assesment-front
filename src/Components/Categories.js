@@ -1,7 +1,13 @@
 export default function Categories(props) {
   const newChangeShow = () => {
-    props.onChangeShow(2);
+    props.onChangeShow(2, 0);
   };
+    const newChangeShow1 = () => {
+        props.onChangeShow(2, 1);
+    };
+    const newChangeShow2 = () => {
+        props.onChangeShow(2, 2);
+    };
   return (
     <div className="container justify-content-center">
       <div className="row ">
@@ -19,7 +25,7 @@ export default function Categories(props) {
           type="button"
           data-test="post-option2-button"
           className="btn btn-default btn-lg btn-block col"
-          onClick={newChangeShow}
+          onClick={newChangeShow1}
         >
           C#
         </button>
@@ -29,7 +35,7 @@ export default function Categories(props) {
           type="button"
           data-test="post-option3-button"
           className="btn btn-default btn-lg btn-block col"
-          onClick={newChangeShow}
+          onClick={newChangeShow2}
         >
           JavaScrip
         </button>

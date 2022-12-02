@@ -6,7 +6,9 @@ import PostFillForm from "./Components/PostFillForm";
 import React, { useState } from "react";
 function App() {
   const [show, setShow] = useState(1);
-  const changeShow = (num) => {
+  const [numVar, setnumVar] = useState(0);
+  const changeShow = (num, num2) => {
+    setnumVar(num2);
     if (num == 1) {
       setShow(1);
     } else if (num == 2) {
@@ -16,11 +18,11 @@ function App() {
     }
   };
   if (show == 1) {
-    return <Categories onChangeShow={changeShow} />;
+    return <Categories onChangeShow={changeShow} numThread = {numVar} />;
   } else if (show == 2) {
-    return <FillNameForm onChangeShow2={changeShow} />;
+    return <FillNameForm onChangeShow2={changeShow} numprop = {numVar} />;
   } else if (show == 3) {
-    return <PostFillForm onChangeShow3={changeShow} />;
+    return <PostFillForm onChangeShow3={changeShow} numprop = {numVar} />;
   }
 }
 
