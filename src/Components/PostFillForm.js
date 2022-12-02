@@ -80,7 +80,7 @@ export default function PostFillForm(props) {
                   type="button"
                   data-test="post-button3"
                   className="btn btn-primary btn-lg btn-block col"
-                  id="post-button3"
+                  data-test='button-submit'
               >
                   full Post
               </button>

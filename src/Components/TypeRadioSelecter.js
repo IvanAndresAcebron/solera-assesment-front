@@ -6,7 +6,8 @@ export default function TypeRadioSelecter() {
           className="form-check-input"
           type="radio"
           name="flexRadioDefault"
-          id="flexRadioDefault1"
+          value="private"
+          data-test="rb-check1"
         />
         <label className="form-check-label">Private post</label>
       </div>
@@ -15,7 +16,8 @@ export default function TypeRadioSelecter() {
           className="form-check-input"
           type="radio"
           name="flexRadioDefault"
-          id="flexRadioDefault2"
+          value="public"
+          data-test="rb-check2"
         />
         <label className="form-check-label">Public post</label>
       </div>
